@@ -1,0 +1,21 @@
+﻿<td><h4 data-toggleedit="true"><%=UserCode%></h4><input <%=Id==null? '':'disabled'%> class="form-control hide userCode" data-toggleedit="true"  placeholder="用户编码" value="<%=UserCode%>"/></td>
+<td><h4 data-toggleedit="true"><%=UserName%></h4><input class="form-control hide userName" data-toggleedit="true" placeholder="用户名称" value="<%=UserName%>" /></td>
+<td><h4 data-toggleedit="true"><%=DeptName%></h4><span class="deptSelecter hide" data-toggleedit="true"></span></td>
+<td><h4 data-toggleedit="true"><%=GroupName%></h4><span class="userGroupSelecter hide" data-toggleedit="true"></span></td>
+<td style="width: 70px"><h4><%=Enabled?'可用':'不可用'%></h4></td>
+<td class="hidden-xs hidden-sm"><h4><%=BuildDate%></h4></td>
+<td class="hidden-xs hidden-sm"><h4><%=BuildUser%></h4></td>
+<td class="hidden-xs hidden-sm"><h4><%=EditDate%></h4></td>
+<td class="hidden-xs hidden-sm"><h4><%=EditUser%></h4></td>
+<td style="width: 140px">
+    <%if(UserCode!='admin'){%>
+    <h4 class="text-center btn-group-xs" data-toggleedit="true">
+        <a class=" btn btn-link edit">修改</a>
+        <a class="btn btn-link del" data-loading-text="删除中">删除</a>
+        <a class="btn btn-link status" data-loading-text="<%=Enabled?'禁用中':'启用中'%>"><%=Enabled?'禁用':'启用'%></a>
+    </h4>
+    <%}%>
+    <div class="text-center btn-group-xs hide" data-toggleedit="true">
+        <a class="btn btn-link save" data-loading-text="保存中">保存</a><a class="btn btn-link cancel">取消</a>
+    </div>
+</td>

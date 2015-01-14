@@ -1,0 +1,14 @@
+﻿<div class="panel-heading">
+    <h4 class="panel-title">
+        <a class="nav " data-toggle="collapse" data-parent="#mainMenuPanel" data-target="#panel_<%=CategoryCode%>" href="#"><%=CategoryName%></a>
+    </h4>
+</div>
+<div id="panel_<%=CategoryCode%>" class="panel-collapse collapse">
+    <div class="panel-body">
+        <ul class="nav">
+            <% for(var i=0; i<=Menus.length-1;i++){ %>
+            <li><a href="#goto<%=Menus[i].MenuCmd%>"><%=Menus[i].MenuName%></a></li>
+            <% } %>
+        </ul>
+    </div>
+</div>

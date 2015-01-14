@@ -1,0 +1,19 @@
+﻿<span class="btn btn-warning">
+    <i class="glyphicon glyphicon-bookmark"></i>
+    <b><%=DeptCode%>-<%=DeptName%>&nbsp;<label class="label label-danger"><%=People%>人</label></b>
+    <form class="form-group-sm form-inline hide">
+        <input class="form-control deptCode" placeholder="部门编码" value="<%=DeptCode%>" <%=Id==null?'':'disabled'%>/>
+        -
+        <input class="form-control deptName" placeholder="部门名称" value="<%=DeptName%>" />
+        <button class="form-control editSave" data-loading-text="正在保存">确定</button>
+        <button class="form-control editCancel" data-loading-text="取消">取消</button>
+    </form>
+</span>
+<span class="btn-group hide">
+    <a class="btn btn-xs add" >增加</a>
+    <a class="btn btn-xs del" data-loading-text="正在删除">删除</a>
+    <a class="btn btn-xs edit">修改</a>
+    <a class="btn btn-xs cancel">取消</a>
+</span>
+<ul></ul>
+<ul></ul>

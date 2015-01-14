@@ -1,0 +1,9 @@
+﻿<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="False">
+    <%=CategoryName%>
+    <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+    <% for(var i=0; i<=Menus.length-1;i++){ %>
+    <li><a href="#goto<%=Menus[i].MenuCmd%>"><%=Menus[i].MenuName%></a></li>
+    <% } %>
+</ul>

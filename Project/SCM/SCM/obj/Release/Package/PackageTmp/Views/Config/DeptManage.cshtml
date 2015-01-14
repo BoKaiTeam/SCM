@@ -1,0 +1,12 @@
+﻿@{ Layout = "~/Views/Shared/_Item_Layout.cshtml";}
+<div id="deptTree" class="tree" style="min-height: 400px">
+    <ul id="root">
+    </ul>
+</div>
+<script>
+    require(["Config/DeptManage/DeptTreeView"], function (DeptTreeView) {
+        var deptManageView = new DeptTreeView({
+            el: "#deptTree"
+        });
+    })
+</script>

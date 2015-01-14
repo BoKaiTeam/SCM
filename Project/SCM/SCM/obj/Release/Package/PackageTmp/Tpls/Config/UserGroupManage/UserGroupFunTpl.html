@@ -1,0 +1,42 @@
+﻿<div class="row">
+    <h4><%=FunCode%>-<%=FunName%></h4>
+</div>
+<div class="form-inline">
+    <div class="row">
+        <div class="col-xs-2 col-xs-offset-1">
+            <div class="form-group">
+                <label class="glyphicon glyphicon-search" data-toggle="tooltip" data-placement="bottom" title="查询">
+                    <input data-name="Queriable" class="form-control" type="checkbox" <%=Queriable?'checked=""':''%> />
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group">
+                <label class="glyphicon glyphicon-plus" data-toggle="tooltip" data-placement="bottom" title="增加">
+                    <input data-name="Creatable" class="form-control" type="checkbox" <%=Creatable?'checked=""':''%> />
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group">
+                <label class="glyphicon glyphicon-remove" data-toggle="tooltip" data-placement="bottom" title="删除">
+                    <input data-name="Deletable" class="form-control" type="checkbox" <%=Deletable?'checked=""':''%> />
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group">
+                <label class="glyphicon glyphicon-edit" data-toggle="tooltip" data-placement="bottom" title="修改">
+                    <input data-name="Changable" class="form-control" type="checkbox" <%=Changable?'checked=""':''%> />
+                </label>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="form-group">
+                <label class="glyphicon glyphicon-check" data-toggle="tooltip" data-placement="bottom" title="审核">
+                    <input data-name="Checkable" class="form-control" type="checkbox" <%=Checkable?'checked=""':''%> />
+                </label>
+            </div>
+        </div>
+    </div>  
+</div>

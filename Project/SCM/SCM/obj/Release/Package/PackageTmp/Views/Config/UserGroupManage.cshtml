@@ -1,0 +1,16 @@
+﻿@{ Layout = "~/Views/Shared/_Item_Layout.cshtml";}
+<div id="userGroupManageView">
+    <div class="btn-group-sm">
+        <a id="btnAddGroup"class="btn btn-success">新建用户组</a>
+    </div>
+
+    <div id="userGrpPanel" class="row" >
+    </div>
+</div>
+<script>
+    require(["Config/UserGroupManage/UserGroupManageView"], function (UserGroupManageView) {
+        var userGroupManageView = new UserGroupManageView({
+            el: "#userGroupManageView"
+        });
+    })
+</script>

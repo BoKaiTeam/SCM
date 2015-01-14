@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="mainApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="navMenuBtn" class="navbar-toggle collapsed btn" aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="navbar-brand">@ViewBag.Title</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <input class="form-control" type="text" placeholder="Search...">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="navMenuStart"><a href="#">欢迎您：@ViewBag.SignUser.UserName</a></li>
+                    <li><a href="/Sign/Signout">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="padding-top: 55px">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 affix" style="overflow-y: auto ;height: 600px">
+                <div id="mainMenuPanel" class="panel-group hidden-xs">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4 class="panel-title text-center">
+                                消息栏
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#">公告<span class="pull-right badge">1</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">信箱<span class="pull-right badge">3</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">日程<span class="pull-right badge">9</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mainPanel" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        require(['Home/MainAppView'], function (MainAppView) {
+            var app = new MainAppView({
+                el:'#mainApp'
+            });
+        })
+    </script>
+</div>

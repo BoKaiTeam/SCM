@@ -1,0 +1,34 @@
+﻿<div class="panel panel-warning ">
+    <div class="panel-heading">
+        <h4 class="text-center panel-title" data-toggleedit="true"><%=GroupCode%>-<%=GroupName%> </h4>
+        <div class="form-group form-inline hide" data-toggleedit="true">
+            <input name="GroupCode" class="form-control" <%=Id==null?'':'disabled'%> placeholder="用户组编码" value="<%=GroupCode%>"/>
+            <input name="GroupName" class="form-control" placeholder="用户组名称" value="<%=GroupName%>" />
+        </div>
+    </div>
+    <div class="panel-footer hide" data-toggleedit="true">
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-warning save" data-loading-text="正在保存">保存</a>
+            <a class="btn btn-warning cancel">取消</a>
+        </div>
+    </div>
+
+    <div class="panel-body" data-toggleedit="true">
+        <div class="">
+            <h4>该组有<label class="text-danger"><%=People%></label>人，<label class="text-danger"><%=Fun%></label>项功能</h4>
+        </div>
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-warning edit">修改</a>
+            <a class="btn btn-warning remove <%=GroupCode!='admin'?'':'disabled'%>" data-loading-text="正在删除">删除</a>
+        </div>
+    </div>
+
+    <ul class="list-group hide" data-toggleedit="true"></ul>
+
+    <div class="panel-footer hide" data-toggleedit="true">
+        <div class="btn-group btn-group-justified ">
+            <a class="btn btn-warning save" data-loading-text="正在保存">保存</a>
+            <a class="btn btn-warning cancel">取消</a>
+        </div>
+    </div>
+</div>

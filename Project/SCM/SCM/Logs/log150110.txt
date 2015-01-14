@@ -1,0 +1,1 @@
+时间：2015-01-10 00:08:56.468#操作人：admin-管理员#结果：系统异常#内容：参数化查询 '(@DeptCode nvarchar(1),@DeptName nvarchar(4000),@ParentCode nvar' 需要参数 '@DeptName'，但未提供该参数。#
